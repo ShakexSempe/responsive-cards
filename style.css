@@ -93,9 +93,11 @@ img{
     opacity: 0.7;
 }
 .card .details p{
-    filter: grayscale(1);
+    transition: .7s;
+    filter: grayscale(0.8);
 }
 .card:hover .details p{
+    transition: 1s;
     filter: grayscale(0);
 }
 .card1>.container::after {
