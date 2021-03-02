@@ -158,7 +158,7 @@ img{
 
 .details>p{
     color: #a0a0a0a0;
-    font-size: 15px;
+    font-size: 1.1em;
     line-height: 30px;
     font-weight: 400;
 }
@@ -257,6 +257,12 @@ footer p{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 20px;
     grid-gap: 40px;
+    }
+    .details>h3{
+        font-size: 1.4em;
+    }
+    .details> p {
+        font-size: 1em;
     }
 }
 
