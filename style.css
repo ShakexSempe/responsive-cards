@@ -23,7 +23,7 @@
             #f84f1ca9,
             #ffab1d);
 
-    --toyota-text: #dc143c;
+    --toyota-text: #f81b47;
     --toyota: linear-gradient(135deg,
             #ff0000,
             #dc143c9f,
@@ -94,7 +94,7 @@ img{
 }
 .card .details p{
     transition: .7s;
-    filter: grayscale(0.8);
+    filter: grayscale(0.9);
 }
 .card:hover .details p{
     transition: 1s;
