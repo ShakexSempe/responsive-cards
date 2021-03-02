@@ -91,7 +91,12 @@ img{
     left: 0;
     border-radius: 20px 20px 0 0;
     opacity: 0.7;
-
+}
+.card .details p{
+    filter: grayscale(1);
+}
+.card:hover .details p{
+    filter: grayscale(0);
 }
 .card1>.container::after {
     background-image: var(--ford);
