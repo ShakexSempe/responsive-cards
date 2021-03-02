@@ -207,7 +207,10 @@ img{
     transition: 2s ease-in-out;
     /* animation: animate 6s infinite; */
 }
-
+.card:hover h3{
+    transition: color 2s;
+    color: transparent;
+}
 .card:hover  >.details h3::before,
 .card:focus  >.details h3::before{
     width: 100%;
