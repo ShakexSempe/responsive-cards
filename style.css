@@ -10,10 +10,11 @@ body{
     display: grid;
     place-items: center center;
     font-family: sans-serif;
+    width: 100vw;
 }
 .cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 20px;
     grid-gap: 40px;
 }
