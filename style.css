@@ -39,6 +39,22 @@
             #000,
             rgba(121, 116, 116, 0.705),
             #000);
+    --golf-text: #666117;
+    --golf: linear-gradient(135deg,
+        #666117,
+        #ffee008e,
+        #666117);
+    --civic-text: #4f4fee;
+    --civic: linear-gradient(135deg,
+        #030397,
+        #09099473,
+        #040475);
+    --i30n-text: #32b5e0 ;
+    --i30n: linear-gradient(135deg,
+        rgb(50, 181, 224),
+        #dc143c8a,
+        rgb(50, 181, 224)
+        );
 }
 
 body{ 
@@ -94,7 +110,7 @@ img{
 }
 .card .details p{
     transition: .7s;
-    filter: grayscale(0.9);
+    filter: blur(2px);
 }
 .card:hover .details p{
     transition: 1s;
@@ -118,6 +134,15 @@ img{
 }
 .card6>.container::after {
     background-image: var(--bmw); 
+}
+.card7>.container::after {
+    background-image: var(--golf); 
+}
+.card8>.container::after {
+    background-image: var(--civic); 
+}
+.card9>.container::after {
+    background-image: var(--i30n); 
 }
 /*end of img cover AFTER element*/
 .card:hover>.container::after{
@@ -154,6 +179,21 @@ img{
     background: var(--bmw);
     border-radius: 20px;
     box-shadow: 0 0 15px rgb(192, 192, 192, .74);
+}
+.card7::before {
+    background: var(--golf);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.74);
+}
+.card8::before {
+    background: var(--civic);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 255, 0.74);
+}
+.card9::before {
+    background: var(--i30n);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(50, 181, 224, 0.74);
 }
 /*end of glowing background BEFORE element*/
 
@@ -192,7 +232,15 @@ img{
 .card6 .details>p {
     color: var(--bmw-text);
 }
-
+.card7 .details>p {
+    color: var(--golf-text);
+}
+.card8 .details>p {
+    color: var(--civic-text);
+}
+.card9 .details>p {
+    color: var(--i30n-text);
+}
 /*end of Details*/
 
 /*heading hover and focus effect*/
@@ -240,6 +288,15 @@ img{
 }
 .card6:hover  >.details h3::before {
     color: var(--bmw-text);
+}
+.card7:hover  >.details h3::before {
+    color: var(--golf-text);
+}
+.card8:hover  >.details h3::before {
+    color: var(--civic-text);
+}
+.card9:hover  >.details h3::before {
+    color: var(--i30n-text);
 }
 
 /*end of heading hover and focus effect*/
