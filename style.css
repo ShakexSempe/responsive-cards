@@ -109,15 +109,17 @@ img{
     opacity: 0.7;
 }
 .card .details p{
-    transition: .7s;
-    filter: blur(2px);
+    transition: all .7s;
+    filter: blur(2px) grayscale(0.8);
 }
 .card:hover .details p{
     transition: 1s;
     filter: grayscale(0);
+
 }
 .card1>.container::after {
     background-image: var(--ford);
+    
 }
 .card2>.container::after {
     background-image: var(--audi);
@@ -146,7 +148,7 @@ img{
 }
 /*end of img cover AFTER element*/
 .card:hover>.container::after{
-    transition: .4s;
+    transition: all .4s;
     background-image: none;
 }
 /*glowing background BEFORE element*/
