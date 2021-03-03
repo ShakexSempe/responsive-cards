@@ -39,12 +39,12 @@
             #000,
             rgba(121, 116, 116, 0.705),
             #000);
-    --golf-text: #666117;
+    --golf-text: #aca329;
     --golf: linear-gradient(135deg,
         #666117,
         #ffee008e,
         #666117);
-    --civic-text: #4f4fee;
+    --civic-text: #9f9fce;
     --civic: linear-gradient(135deg,
         #030397,
         #09099473,
@@ -351,7 +351,7 @@ footer p{
     margin-top: 15px;
     }
     .details>h3{
-        font-size: 1.05em;
+        font-size: 1em;
     }
     .details> p {
         font-size: 0.7em;
