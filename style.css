@@ -93,7 +93,7 @@ nav ul li {
     
 }
 nav ul li:hover{
-    transition: transform .3s;
+    transition: all.3s;
     transform: scale(1.1);
     color: rgb(212, 209, 209);
 
@@ -163,12 +163,12 @@ img{
     opacity: 0.7;
 }
 .card .details p{
-    transition: all .7s;
-    filter: blur(2px) grayscale(0.8);
     font-family: 'Inter', sans-serif;
+    filter: blur(2px) grayscale(0.8);
+    transition: all .7s;
 }
 .card:hover .details p{
-    transition: 1s;
+    transition: all 1s;
     filter: grayscale(0);
 
 }
