@@ -302,6 +302,7 @@ img{
 }
 
 /*end of heading hover and focus effect*/
+
 nav{
     width: 100%;
     background: red;
@@ -313,7 +314,7 @@ nav ul {
 }
 nav ul li {
     margin: 10px auto;
-    color: #fff;
+    color: rgb(212, 209, 209);
     text-align: center;
     list-style: none;
     font-family: 'Inter', sans-serif;
@@ -322,7 +323,7 @@ nav ul li {
 }
 nav ul li:hover{
     transition: transform .3s;
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: rgb(155, 151, 151);
 
 }
@@ -342,30 +343,51 @@ footer p{
 }
 
 @media screen and (max-width: 450px) {
+    
+    nav{
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        overflow-x: scroll;
+        background: #151320;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-between;
 
+        
+    }
+    nav ul li {
+        margin-right: 20px;
+        padding: 5px;
+
+    }
+    nav ul li a img{
+        width: 50px;
+    }
 .cards {
+    position: absolute;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding: 5px;
+    padding-top: 40px;
     grid-gap: 40px;
-    margin-top: 15px;
+    }
+    .card {
+        position: relative;
+        padding-top: 16vh;
+        height: 83vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
     }
     .details>h3{
         font-size: 1em;
     }
     .details> p {
         font-size: 0.7em;
-    }
-    nav{
-        position: fixed;
-        float: left;
-        z-index: 2;
-    }
-    nav ul{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    nav ul li {
     }
 }
 
