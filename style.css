@@ -331,7 +331,7 @@ img{
 }
 .card3:hover  >.details h3::before {
     color: var(--renault-text);
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
 }
 .card4:hover  >.details h3::before {
     color: var(--toyota-text);
@@ -348,7 +348,6 @@ img{
 }
 .card8:hover  >.details h3::before {
     color: var(--civic-text);
-    font-size: 0.8em;
 }
 .card9:hover  >.details h3::before {
     color: var(--i30n-text);
@@ -404,6 +403,15 @@ img{
     }
     .details> p {
         font-size: 0.7em;
+    }
+    .card3:hover  >.details h3::before {
+        font-size: 0.8em;
+    }
+    .card8:hover  >.details h3::before {
+        font-size: 0.8em;
+    }
+    #golf:hover  >.details h3::before {
+        font-size: 0.8em;
     }
 }
 
