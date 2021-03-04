@@ -3,6 +3,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
+    scroll-behavior: smooth;
 }
 :root {
     --ford-text: #5abbfc;
@@ -64,11 +66,59 @@ body{
     place-items: center center;
     font-family: sans-serif;
 }
+
+nav{
+    position: fixed;
+    width: 100%;
+    background: #151320 ;
+    z-index: 3;
+
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav ul li {
+    margin: 5px auto;
+    color: rgb(212, 209, 209);
+    text-align: center;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    
+
+}
+nav ul li:hover{
+    transition: transform .3s;
+    transform: scale(1.1);
+    color: rgb(155, 151, 151);
+
+}
+
+/* footer{
+    position: absolute;
+    bottom: 0;
+    background: red;
+    width: 100%;
+    text-align: center;
+}
+footer p{
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    font-size: 1em;
+} */
+
+
+
+
 .cards{
+    position: absolute;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     padding: 20px;
     grid-gap: 40px;
+    top: 15vh;
 }
 .card{
     background-color: #1c1b29;
@@ -306,44 +356,7 @@ img{
 
 /*end of heading hover and focus effect*/
 
-nav{
-    width: 100%;
-    background: red;
 
-}
-nav ul {
-    display: flex;
-    flex-direction: row;
-}
-nav ul li {
-    margin: 10px auto;
-    color: rgb(212, 209, 209);
-    text-align: center;
-    list-style: none;
-    font-family: 'Inter', sans-serif;
-    
-
-}
-nav ul li:hover{
-    transition: transform .3s;
-    transform: scale(1.1);
-    color: rgb(155, 151, 151);
-
-}
-
-
-
-
-footer{
-    width: 100%;
-    text-align: center;
-}
-footer p{
-    margin: 10px;
-    padding: 10px;
-    color: #fff;
-    font-size: 1em;
-}
 
 @media screen and (max-width: 450px) {
     
@@ -363,7 +376,7 @@ footer p{
         
     }
     nav ul li {
-        margin-right: 20px;
+        margin: 5px 20px;
         padding: 5px;
 
     }
