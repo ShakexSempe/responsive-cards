@@ -117,8 +117,8 @@ footer p{
 
 
 .cards{
-    position: absolute;
     display: grid;
+    position: relative;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     padding: 20px;
     grid-gap: 40px;
@@ -128,6 +128,7 @@ footer p{
     background-color: #1c1b29;
     border-radius: 20px;
     position: relative;
+    cursor: pointer;
 }
 
 .card::before {
@@ -139,8 +140,27 @@ footer p{
     bottom: -2px;
     background: #fff;
     z-index: -1;
+    opacity: 0;
+    transition: .5s ease;
 }
-
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: inset 3px 3px 5px #ddda,
+                inset -3px -3px 5px #000;
+    transition: .5s ease;
+}
+.card:hover.card::before {
+    opacity: 1;
+}
+.card:hover.card::after {
+    opacity: 0;
+}
 
 .container{
     position: relative;
@@ -150,8 +170,13 @@ img{
     width: 100%;
     display: block;
     border-radius: 20px 20px 0 0;
+    transform: scale(.93);
+    transition: .5s ease;
 }
-/*img cover AFRTER element*/
+.card:hover .container img {
+    transform: scale(1);
+}
+/*img cover AFTER element*/
 .container::after{
     position: absolute;
     content: '';
@@ -161,6 +186,7 @@ img{
     left: 0;
     border-radius: 20px 20px 0 0;
     opacity: 0.7;
+    transition: .5s;
 }
 .card .details p{
     font-family: 'Inter', sans-serif;
@@ -203,8 +229,8 @@ img{
 }
 /*end of img cover AFTER element*/
 .card:hover>.container::after{
-    transition: all .4s;
-    background-image: none;
+    transition: .4s ease;
+    opacity: 0;
 }
 /*glowing background BEFORE element*/
 .card1::before {
@@ -388,20 +414,20 @@ img{
         width: 50px;
     }
 .cards {
-    position: absolute;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding-top: 40px;
+    position: relative;
+    top: 20vh;
     grid-gap: 40px;
     }
     .card {
         position: relative;
-        padding-top: 16vh;
-        height: 83vh;
+        /* padding-top: 16vh; */
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     .details>h3{
         font-size: 1em;
