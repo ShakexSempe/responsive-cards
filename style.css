@@ -71,6 +71,8 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
+    height: auto;
+    padding: 0 5vw;
     background: #151320 ;
     z-index: 20;
 
@@ -125,7 +127,8 @@ footer p{
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     padding: 0 20px;
     grid-gap: 40px;
-    top: 25vh;
+    top: 20vh;
+    margin: 0 5vw;
 }
 .card{
     background-color: #1c1b29;
@@ -411,10 +414,8 @@ img{
     nav{
         position: fixed;
         width: 100%;
-        height: auto;
         flex-direction: row;
         overflow-x: scroll;
-        background: #151320;
     }
     nav ul{
         display: flex;
@@ -436,6 +437,7 @@ img{
     position: relative;
     top: 15vh;
     grid-gap: 40px;
+    margin:0 ;
     }
     .card {
         position: relative;
