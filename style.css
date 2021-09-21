@@ -69,6 +69,7 @@ body{
 
 nav{
     position: fixed;
+    top: 0;
     width: 100%;
     background: #151320 ;
     z-index: 20;
