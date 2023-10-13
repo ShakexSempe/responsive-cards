@@ -77,8 +77,8 @@ img {
 .card .details p {
   font-size: 1rem;
   font-size: clamp(.95rem, 2vw, 1rem);
-  color: #a0a0a0;
-  line-height: 1.8;
+  color: #fff;
+  line-height: 1.9;
   filter: grayscale(1);
   transition: 1s ease;
 }
