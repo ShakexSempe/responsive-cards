@@ -58,14 +58,21 @@ img {
 .card .details h3 {
   color: #f4f4f4;
   font-size: 0.95rem;
-  margin: 10px 0 15px 0;
+  font-weight: 100;
   margin: 1rem 0;
   position: relative;
   font-family: "Krona One", sans-serif;
   transition: 5s;
 }
-.card .details h3::after, .card .details h3::before {
-  font-size: inherit;
+.card .details h3::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #cecdcd;
+  width: 0%;
+  overflow: hidden;
+  transition: 1.5s ease-in-out;
 }
 .card .details p {
   font-size: 1rem;
@@ -75,10 +82,22 @@ img {
   filter: grayscale(1);
   transition: 1s ease;
 }
+.card figure {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  overflow: hidden;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  transition: 0.5s ease;
+}
 @media (min-width: 576px) {
   .card figure {
     height: 50%;
   }
+}
+.card figure img {
+  border-radius: 5px;
+  transition: 0.5s ease-out;
 }
 .card figure::after {
   position: absolute;
@@ -91,9 +110,19 @@ img {
   opacity: 0.5;
   transition: 0.5s;
 }
+.card:hover figure img {
+  transform: scale(1.05);
+}
 .card:hover figure::after {
   opacity: 0;
   transition: 1s;
+}
+.card:hover .details h3 {
+  transition: color 1s;
+  color: transparent;
+}
+.card:hover .details h3::before {
+  width: 100%;
 }
 .card:hover .details p {
   filter: grayscale(0);
@@ -222,36 +251,6 @@ footer p{
     color: #fff;
     font-size: 1em;
 } */
-.card:hover.card::before {
-  opacity: 1;
-}
-
-.card:hover.card::after {
-  opacity: 0;
-}
-
-figure {
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  z-index: 5;
-  overflow: hidden;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  transition: 0.5s ease;
-}
-
-img {
-  width: 100%;
-  border-radius: 5px;
-  transform: scale(0.93);
-  transition: 0.5s ease-out;
-}
-
-.card:hover figure img {
-  transform: scale(1.05);
-}
-
-/*img cover AFTER element*/
 .card1 > figure::after {
   background-image: var(--ford);
 }
@@ -288,63 +287,6 @@ img {
   background-image: var(--i30n);
 }
 
-/*end of img cover AFTER element*/
-/*glowing background BEFORE element*/
-.card1::before {
-  background: var(--ford);
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(0, 0, 255, 0.74);
-}
-
-.card2::before {
-  background: var(--audi);
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(0, 211, 0, 0.74);
-}
-
-.card3::before {
-  background: var(--renault);
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(255, 165, 0, 0.74);
-}
-
-.card4::before {
-  background: var(--toyota);
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(220, 20, 60, 0.74);
-}
-
-.card5::before {
-  background: var(--benz);
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(255, 240, 0, 0.74);
-}
-
-.card6::before {
-  background: var(--bmw);
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(192, 192, 192, 0.74);
-}
-
-.card7::before {
-  background: var(--golf);
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(255, 255, 0, 0.74);
-}
-
-.card8::before {
-  background: var(--civic);
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(0, 0, 255, 0.74);
-}
-
-.card9::before {
-  background: var(--i30n);
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(50, 181, 224, 0.74);
-}
-
-/*end of glowing background BEFORE element*/
 /*Details*/
 .card1 .details > p {
   color: var(--ford-text);
@@ -382,31 +324,6 @@ img {
   color: var(--i30n-text);
 }
 
-/*end of Details*/
-/*heading hover and focus effect*/
-.details h3::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #cecdcd;
-  width: 0%;
-  overflow: hidden;
-  transition: 1.7s ease-in-out;
-  /* animation: animate 6s infinite; */
-}
-
-.card:hover h3 {
-  transition: color 1s;
-  color: transparent;
-}
-
-.card:hover > .details h3::before,
-.card:focus > .details h3::before {
-  width: 100%;
-  transition: 2s ease;
-}
-
 .card1:hover > .details h3::before {
   color: var(--ford-text);
 }
@@ -417,7 +334,6 @@ img {
 
 .card3:hover > .details h3::before {
   color: var(--renault-text);
-  /* font-size: 0.8em; */
 }
 
 .card4:hover > .details h3::before {
@@ -434,7 +350,6 @@ img {
 
 .card7:hover > .details h3::before {
   color: var(--golf-text);
-  font-size: 0.9em;
 }
 
 .card8:hover > .details h3::before {

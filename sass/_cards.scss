@@ -24,26 +24,29 @@
     position: relative;
     height: auto;
 
-    // @include mixin.md {
-    //     height: 90vh;
-    // }
-
     .details {
         padding: 1rem;
         text-wrap: balance;
         h3 {
             color: #f4f4f4;
             font-size: .95rem;
-            margin: 10px 0 15px 0;
+            font-weight: 100;
             margin: 1rem 0;
             position: relative;
             font-family: 'Krona One', sans-serif;
             transition: 5s;
 
-            &::after,
             &::before {
-                font-size: inherit;
+                content: attr(data-text);
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: #cecdcd;
+                width: 0%;
+                overflow: hidden;
+                transition: 1.5s ease-in-out;
             }
+
         }
 
         p {
@@ -58,9 +61,24 @@
     }
 
     figure {
+        // DESKTOP FIGURE
         @include mixin.sm {
             height: 50%;
         }
+
+        position: relative;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        overflow: hidden;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        transition: .5s ease;
+        // z-index: 5;
+
+        img {
+            border-radius: 5px;
+            transition: .5s ease-out;
+        }
+
         // IMAGE COLORED OVERLAYS
         &::after {
             position: absolute;
@@ -72,13 +90,20 @@
             border-radius: 5px 5px 0 0;
             opacity: 0.5;
             transition: 0.5s;
+
+
         }
     }
 
 
+    // CARD HOVER CLASS
     &:hover {
 
         figure {
+            img {
+                transform: scale(1.05);
+
+            }
             &::after {
                 opacity: 0;
                 transition: 1s;
@@ -86,9 +111,18 @@
         }
 
         .details{
+            h3 {
+                transition: color 1s;
+                color: transparent;
+
+                &::before {
+                    width: 100%;
+                }
+            }
             p {
                 filter: grayscale(0);
             }
         }
     }
+
 }
