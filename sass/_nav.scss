@@ -31,7 +31,6 @@ nav{
             // outline-color: pink;
             text-align: center;
             list-style: none;
-            color: hsl(0, 2%, 70%);
             font-weight: 100;
             font-size: .75rem;
             padding-inline: .5rem;
@@ -48,10 +47,16 @@ nav{
                 text-decoration: none;
                 flex-direction: column;
                 align-items: center;
-                color: #eee;
+                color: #f4f4f4;
+                opacity: .7;
+                transition: .25s;
 
                 img {
                     width: 2rem;
+                }
+
+                &:hover {
+                    opacity: 1;
                 }
             }
         }
