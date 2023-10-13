@@ -1,4 +1,5 @@
 @use './base';
+@use './cards';
 @use './nav';
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Krona+One&display=swap');
@@ -72,57 +73,31 @@ footer p{
 } */
 
 
-
-
-.cards{
-    display: grid;
-    position: relative;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    padding: 0 20px;
-    grid-gap: 40px;
-    top: 20vh;
-    margin: 0 5vw;
-}
-.card{
-    background-color: #1c1b29;
-    border-radius: 20px;
-    position: relative;
-    cursor: pointer;
-    border: none;
-    outline: none;
-
-}
-.card:hover,
-.card:focus,
-.card:active {
-    outline: none;
-    border: none;
-}
-.card::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    border-radius: 20px;
-    bottom: -2px;
-    background: #fff;
-    z-index: -1;
-    opacity: 0;
-    transition: 1s ease;
-}
-.card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    box-shadow: inset 3px 3px 5px #ddda,
-                inset -3px -3px 5px #000;
-    transition: 1s ease;
-}
+// .card::before {
+//     content: '';
+//     position: absolute;
+//     top: -2px;
+//     left: -2px;
+//     right: -2px;
+//     border-radius: inherit;
+//     bottom: -2px;
+//     background: #fff;
+//     z-index: -1;
+//     opacity: 0;
+//     transition: 1s ease;
+// }
+// .card::after {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     border-radius: inherit;
+//     box-shadow: inset 3px 3px 5px #ddda,
+//                 inset -3px -3px 5px #000;
+//     transition: 1s ease;
+// }
 .card:hover.card::before {
     opacity: 1;
 }
@@ -130,79 +105,78 @@ footer p{
     opacity: 0;
 }
 
-.container{
+figure{
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     z-index: 5;
     overflow: hidden;
-    /* border-radius: 20px; */
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
     transition: .5s ease;
 }
 img{
     width: 100%;
-    border-radius: 20px;
+    border-radius: 5px;
     transform: scale(.93);
-    transition: 1s ease-in;
+    transition: .5s ease-out;
 }
-.card:hover .container img {
+.card:hover figure img {
     transform: scale(1.05);
     
 
 }
 /*img cover AFTER element*/
-.container::after{
+figure::after{
     position: absolute;
     content: '';
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    border-radius: 20px 20px 0 0;
+    border-radius: 5px 5px 0 0;
     opacity: 0.7;
-    transition: .5s;
+    transition: 0.5s;
 }
 .card .details p{
     font-family: 'Inter', sans-serif;
-    filter: blur(2px) grayscale(0.8);
-    transition: 1s ease;
+    filter: grayscale(0.8);
+    transition: 0.5s ease;
 }
 .card:hover .details p{
     filter: grayscale(0);
 
 }
-.card1>.container::after {
+.card1>figure::after {
     background-image: var(--ford);
     
 }
-.card2>.container::after {
+.card2>figure::after {
     background-image: var(--audi);
 }
-.card3>.container::after {
+.card3>figure::after {
     background-image: var(--renault);
     
 }
-.card4>.container::after {
+.card4>figure::after {
     background-image: var(--toyota);
 }
-.card5>.container::after {
+.card5>figure::after {
     background-image: var(--benz);
 }
-.card6>.container::after {
+.card6>figure::after {
     background-image: var(--bmw); 
 }
-.card7>.container::after {
+.card7>figure::after {
     background-image: var(--golf); 
 }
-.card8>.container::after {
+.card8>figure::after {
     background-image: var(--civic); 
 }
-.card9>.container::after {
+.card9>figure::after {
     background-image: var(--i30n); 
 }
 /*end of img cover AFTER element*/
-.card:hover>.container::after{
+.card:hover>figure::after{
     transition: 1s ease;
     opacity: 0;
 }
@@ -255,17 +229,7 @@ img{
 /*end of glowing background BEFORE element*/
 
 /*Details*/
-/*details p*/
-.details {
-    padding: 20px 20px;
-}
 
-.details>p{
-    color: #a0a0a0;
-    font-size: 1.1em;
-    line-height: 30px;
-    font-family: 'Inter', sans-serif;
-}
 .card1 .details>p {
     color: var(--ford-text);
 }
@@ -302,11 +266,7 @@ img{
 
 /*heading hover and focus effect*/
 .details>h3{
-    color: rgba(116, 116, 116, 0.425);
-    font-size: 1.4em;
-    margin: 10px 0 15px 0;
-    position: relative;
-    font-family: 'Krona One', sans-serif;
+    
 }
 .details h3::before {
     content: attr(data-text);
@@ -362,41 +322,6 @@ img{
 
 
 
-@media screen and (max-width: 767px) {
-    
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    position: relative;
-    top: 15vh;
-    grid-gap: 40px;
-    margin:0 ;
-    }
-    .card {
-        position: relative;
-        /* padding-top: 16vh; */
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .details>h3{
-        font-size: 1em;
-    }
-    .details> p {
-        font-size: 0.7em;
-    }
-    .card3:hover  >.details h3::before {
-        font-size: 0.8em;
-    }
-    .card8:hover  >.details h3::before {
-        font-size: 0.8em;
-    }
-    #golf:hover  >.details h3::before {
-        font-size: 0.8em;
-    }
-}
 
 
 
