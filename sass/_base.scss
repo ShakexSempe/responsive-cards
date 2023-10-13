@@ -5,17 +5,13 @@
     scroll-behavior: smooth;
     scroll-padding-top: 15vh;
     outline: 2px solid transparent;
+    @media (min-width: 768px){
+        scroll-padding-top: 20vh;
+    }
 }
 
 body{ 
-    font-family: 'Krona One', sans-serif;
     font-family: 'Inter', sans-serif;
-
-
-}
-
-main {
-    outline-color: pink;
 }
 
 #container {

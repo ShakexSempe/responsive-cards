@@ -1,7 +1,7 @@
 @use './mixin';
 
 .grid-container {
-    border: 4px solid #fff4;
+    // border: 4px solid #fff4;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     position: relative;
