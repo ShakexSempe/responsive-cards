@@ -6,130 +6,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#151320"/>
     <title>Responsive Cards</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="container">
+
         <nav id="navbar">
+
             <ul>
-                <li><a href="#audi" class="nav-link"><img src="https://img.icons8.com/color/48/000000/audi.png" /></a>Audi</li>
-                <li><a href="#benz" class="nav-link"><img src="https://img.icons8.com/color/48/000000/mercedes-benz.png" /></a>Benz</li>
-                <li><a href="#bmw" class="nav-link"><i><img src="https://img.icons8.com/color/48/000000/bmw--v1.png" /></i></a>BMW</li>
-                <li><a href="#ford" class="nav-link"><img src="https://img.icons8.com/color/48/000000/ford.png" /></a>Ford</li>
-                <li><a href="#golf" class="nav-link"><i><img src="https://img.icons8.com/color/48/000000/volkswagen.png"/></i></a>Golf</li>
-                <li><a href="#i30" class="nav-link"><i><img src="https://img.icons8.com/color/48/000000/hyundai.png"/></i></a>Hyundai</li>
-                <li><a href="#honda" class="nav-link"><i><img src="https://img.icons8.com/color/48/000000/honda.png"/></i></a>Honda</li>
-                <li><a href="#renault" class="nav-link"><img src="https://img.icons8.com/color/48/000000/renault.png" /></a>Renault</li>
-                <li><a href="#toyota" class="nav-link"><img src="https://img.icons8.com/color/48/000000/toyota.png" /></a>Toyota</li>
+                <li><a href="#audi" class="nav-link"><img
+                            src="https://img.icons8.com/color/48/000000/audi.png" /></a>Audi
+                </li>
+                <li><a href="#benz" class="nav-link"><img
+                            src="https://img.icons8.com/color/48/000000/mercedes-benz.png" /></a>Benz</li>
+                <li><a href="#bmw" class="nav-link"><i><img
+                                src="https://img.icons8.com/color/48/000000/bmw--v1.png" /></i></a>BMW</li>
+                <li><a href="#ford" class="nav-link"><img
+                            src="https://img.icons8.com/color/48/000000/ford.png" /></a>Ford
+                </li>
+                <li><a href="#golf" class="nav-link"><i><img
+                                src="https://img.icons8.com/color/48/000000/volkswagen.png" /></i></a>Golf</li>
+                <li><a href="#i30" class="nav-link"><i><img
+                                src="https://img.icons8.com/color/48/000000/hyundai.png" /></i></a>Hyundai</li>
+                <li><a href="#honda" class="nav-link"><i><img
+                                src="https://img.icons8.com/color/48/000000/honda.png" /></i></a>Honda</li>
+                <li><a href="#renault" class="nav-link"><img
+                            src="https://img.icons8.com/color/48/000000/renault.png" /></a>Renault</li>
+                <li><a href="#toyota" class="nav-link"><img
+                            src="https://img.icons8.com/color/48/000000/toyota.png" /></a>Toyota</li>
             </ul>
+
         </nav>
-    <section class="cards">
-        <div class="card card1" id="ford">
-            <div class="container">
-                <img src="img/ford.jpg" alt="ford focus">
-            </div>
-            <div class="details">
-                <h3 data-text="Ford_Focus_RS(2016)">Ford_Focus</h3>
-                <p>The Focus RS is a performance-oriented version of the Focus hatchback with its flashy exterior,  all-wheel-drive and powerful 257 kW engine that produces 440 Nm of torque.</p>
-            </div>
-        </div>
-
         
-            
+        <main id="main">
+            <section class="cards">
+                <div class="card card1" id="ford">
+                    <div class="container">
+                        <img src="img/ford.jpg" alt="ford focus">
+                    </div>
+                    <div class="details">
+                        <h3 data-text="Ford_Focus_RS(2016)">Ford_Focus</h3>
+                        <p>The Focus RS is a performance-oriented version of the Focus hatchback with its flashy
+                            exterior,
+                            all-wheel-drive and powerful 257 kW engine that produces 440 Nm of torque.</p>
+                    </div>
+                </div>
 
-        <div class="card card2" id="audi">
-            <div class="container">
-                <img src="img/greenS3.jpg" alt="audi rs3" loading="lazy">
-            </div>
-            <div class="details">
-                <h3 data-text="Audi_RS3(2017)" >Audi_A3</h3>
-                <p>The Audi RS 3 will impress you with the combination of 5-cylinder power and the characteristic RS features. The 2.5-litre TFSI engine with 294 kW catapults this car from 0 to 100 km/h in just 4.1 seconds.</p>
-            </div>
-        </div>
 
-        <div class="card card3" id="renault">
-            <div class="container">
-                <img src="img/megane.jpg" alt="renault megane" loading="lazy">
-            </div>
-            <div class="details">
-                <h3 data-text="Renault_Megane_RS(2019)">Renault_Megane</h3>
-                <p> The Megane RS has challenged the perceptions of what compact-sized hot hatchbacks and front-wheel-drive cars can achieve dynamically. 
-                    It has a 1.8-litre engine, 4-cylinder turbopetrol engine and 
-                    has Power/Torque output of 205 kW/390 Nm
-                </p>
-            </div>
-        </div>
 
-        <div class="card card4" id="toyota">
-            <div class="container">
-                <img src="img/2020-toyota-gr-yaris.jpg" alt="toyota yaris" loading="lazy">
-            </div>
-            <div class="details">
-                <h3 data-text="Toyota_GR_Yaris(2018)">Toyota_Yaris</h3>
-                <p>The Gazoo Racing Yaris  
-                    has the world's most powerful three-cylinder engine installed in a road car. 
-                    The 1.6-litre turbocharged engine offers up 192 kW and 360 Nm. 
-                </p>
-            </div>
-        </div>
 
-        <div class="card card5" id="benz">
-            <div class="container">
-                <img src="img/mercA45.jpg" alt="mercedes a45" loading="lazy">
-            </div>
-            <div class="details">
-                <h3 data-text="Mercedes_A45(2018)">Mercedes_A_Class</h3>
-                <p>The four-wheel drive A45 AMG is staggeringly fast in a straight-line
-                    with a power output of 280 kW at 6,000 and 475 Nm of torque at 2,250–5,000.
-                </p>
-            </div>
-        </div>
+                <div class="card card2" id="audi">
+                    <div class="container">
+                        <img src="img/greenS3.jpg" alt="audi rs3" loading="lazy">
+                    </div>
+                    <div class="details">
+                        <h3 data-text="Audi_RS3(2017)">Audi_A3</h3>
+                        <p>The Audi RS 3 will impress you with the combination of 5-cylinder power and the
+                            characteristic RS
+                            features. The 2.5-litre TFSI engine with 294 kW catapults this car from 0 to 100 km/h in
+                            just
+                            4.1
+                            seconds.</p>
+                    </div>
+                </div>
 
-        <div class="card card6" id="bmw">
-            <div class="container">
-                <img src="img/140m.jpg" alt="bmw m140i" loading="lazy">
-            </div>
-            <div class="details">
-                <h3 data-text="BMW_M140i(2016)">BMW_1_Series</h3>
-                <p>BMW proudly bucked the trend of 4-cylinder motors by offering the M140i a 6-cylinder unit
-                    capable of a substantial power output of 250 kW and 500 Nm of torque.
-                </p>
-            </div>
-        </div>
+                <div class="card card3" id="renault">
+                    <div class="container">
+                        <img src="img/megane.jpg" alt="renault megane" loading="lazy">
+                    </div>
+                    <div class="details">
+                        <h3 data-text="Renault_Megane_RS(2019)">Renault_Megane</h3>
+                        <p> The Megane RS has challenged the perceptions of what compact-sized hot hatchbacks and
+                            front-wheel-drive cars can achieve dynamically.
+                            It has a 1.8-litre engine, 4-cylinder turbopetrol engine and
+                            has Power/Torque output of 205 kW/390 Nm
+                        </p>
+                    </div>
+                </div>
 
-        <div class="card card7" id="golf">
-            <div class="container">
-                <img src="img/2017golf7r.jpg" alt="volkswagen golf" loading="lazy">
-            </div>
-            <div class="details">
-                <h3 data-text="Volkswagen_Golf_7.5_R(2017)">Volkswagen_Golf</h3>
-                <p>The most powerful production Golf to date. The turbocharged 2,0-litre TSI engine outputs an overall 228 kW with 380 Nm of torque between 1 850 and 5 300 r/min. The 7.5 R is able to reach 100 km/h from 0 in a claimed 4,6 seconds</p>
-            </div>
-        </div>
+                <div class="card card4" id="toyota">
+                    <div class="container">
+                        <img src="img/2020-toyota-gr-yaris.jpg" alt="toyota yaris" loading="lazy">
+                    </div>
+                    <div class="details">
+                        <h3 data-text="Toyota_GR_Yaris(2018)">Toyota_Yaris</h3>
+                        <p>The Gazoo Racing Yaris
+                            has the world's most powerful three-cylinder engine installed in a road car.
+                            The 1.6-litre turbocharged engine offers up 192 kW and 360 Nm.
+                        </p>
+                    </div>
+                </div>
 
-        <div class="card card8" id="honda">
-            <div class="container">
-                <img src="img/Color-Options-for-the-2019-Honda-Civic-Type-R-b3_o.jpg" alt="volkswagen golf" loading="lazy">
-            </div>
-            <div class="details">
-                <h3 data-text="Honda_Civic_Type_R(2017)">Honda_Civic</h3>
-                <p> "Quite simply the finest hot hatchback to come to market since the VW Golf GTI Clubsport S and Renault Sport Mégane R26.R." 
-                    The turbocharged 2,0-litre, four-cylinder petrol engine delivers 228 kW and 400 N.m to the front axle.</p>
-            </div>
-        </div>
+                <div class="card card5" id="benz">
+                    <div class="container">
+                        <img src="img/mercA45.jpg" alt="mercedes a45" loading="lazy">
+                    </div>
+                    <div class="details">
+                        <h3 data-text="Mercedes_A45(2018)">Mercedes_A_Class</h3>
+                        <p>The four-wheel drive A45 AMG is staggeringly fast in a straight-line
+                            with a power output of 280 kW at 6,000 and 475 Nm of torque at 2,250–5,000.
+                        </p>
+                    </div>
+                </div>
 
-        <div class="card card9" id="i30">
-            <div class="container">
-                <img src="img/hot-hatch-hyundai-i30n-wallpaper-preview.jpg" alt="volkswagen golf" loading="lazy">
-            </div>
-            <div class="details">
-                <h3 data-text="Hyundai_i30_N(2017)">Hyundai_i30</h3>
-                <p>The i30 N was developed to demonstrate that Hyundai can indeed produce an exciting performance car. 
-                    Its powered by a potent 202 kW/353 Nm 2.0-litre turbopetrol engine mated with a 6-speed manual gearbox.
-                </p>
-            </div>
-        </div>
-        
-    </section>
+                <div class="card card6" id="bmw">
+                    <div class="container">
+                        <img src="img/140m.jpg" alt="bmw m140i" loading="lazy">
+                    </div>
+                    <div class="details">
+                        <h3 data-text="BMW_M140i(2016)">BMW_1_Series</h3>
+                        <p>BMW proudly bucked the trend of 4-cylinder motors by offering the M140i a 6-cylinder unit
+                            capable of a substantial power output of 250 kW and 500 Nm of torque.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card7" id="golf">
+                    <div class="container">
+                        <img src="img/2017golf7r.jpg" alt="volkswagen golf" loading="lazy">
+                    </div>
+                    <div class="details">
+                        <h3 data-text="Volkswagen_Golf_7.5_R(2017)">Volkswagen_Golf</h3>
+                        <p>The most powerful production Golf to date. The turbocharged 2,0-litre TSI engine outputs an
+                            overall
+                            228 kW with 380 Nm of torque between 1 850 and 5 300 r/min. The 7.5 R is able to reach 100
+                            km/h
+                            from
+                            0 in a claimed 4,6 seconds</p>
+                    </div>
+                </div>
+
+                <div class="card card8" id="honda">
+                    <div class="container">
+                        <img src="img/Color-Options-for-the-2019-Honda-Civic-Type-R-b3_o.jpg" alt="volkswagen golf"
+                            loading="lazy">
+                    </div>
+                    <div class="details">
+                        <h3 data-text="Honda_Civic_Type_R(2017)">Honda_Civic</h3>
+                        <p> "Quite simply the finest hot hatchback to come to market since the VW Golf GTI Clubsport S
+                            and
+                            Renault Sport Mégane R26.R."
+                            The turbocharged 2,0-litre, four-cylinder petrol engine delivers 228 kW and 400 N.m to the
+                            front
+                            axle.</p>
+                    </div>
+                </div>
+
+                <div class="card card9" id="i30">
+                    <div class="container">
+                        <img src="img/hot-hatch-hyundai-i30n-wallpaper-preview.jpg" alt="volkswagen golf"
+                            loading="lazy">
+                    </div>
+                    <div class="details">
+                        <h3 data-text="Hyundai_i30_N(2017)">Hyundai_i30</h3>
+                        <p>The i30 N was developed to demonstrate that Hyundai can indeed produce an exciting
+                            performance
+                            car.
+                            Its powered by a potent 202 kW/353 Nm 2.0-litre turbopetrol engine mated with a 6-speed
+                            manual
+                            gearbox.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
     <script src="main.js"></script>
     <!-- <footer>
         <p>Shakex Sempe 2021</p>

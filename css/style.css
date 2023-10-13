@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Krona+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: 2px solid transparent;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+main {
+  outline-color: pink;
+}
+
+#container {
+  outline-color: yellow;
+  width: 100%;
+  margin-inline: auto;
+  background-color: #151320;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 0.5rem 5vw;
+  background: #151320;
+  z-index: 10;
+  height: auto;
+}
+nav ul {
+  padding: 0.5rem 0.25rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  overflow-x: scroll;
+}
+@media (min-width: 768px) {
+  nav ul {
+    overflow: auto;
+  }
+}
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  font-family: "Krona One", sans-serif;
+  color: #b4b1b1;
+  font-weight: 100;
+  cursor: default;
+  font-size: 0.75rem;
+  padding-right: 0.5rem;
+  border-right: 1px solid #fff2;
+}
+@media (min-width: 768px) {
+  nav ul li {
+    cursor: pointer;
+  }
+}
+nav ul li a img {
+  width: 2rem;
+}
+nav ul li:hover {
+  transition: all 0.15s;
+  color: white;
+}
+
+:root {
+  --ford-text: #5abbfc;
+  --ford: linear-gradient(135deg,
+          #0100ec,
+          #6600ec5d,
+          #0100ec);
+  --audi-text: #0dcc0d;
+  --audi: linear-gradient(135deg,
+          #008000,
+          #00800065,
+          #008000);
+  --renault-text: #ffab1d;
+  --renault: linear-gradient(135deg,
+          #ffab1d,
+          #f84f1ca9,
+          #ffab1d);
+  --toyota-text: #fc466a;
+  --toyota: linear-gradient(135deg,
+          #ff0000,
+          #dc143c9f,
+          #ff0000);
+  --benz-text: #fff000 ;
+  --benz: linear-gradient(235deg, #fff000,
+          #ffee007c,
+          #fff000);
+  --bmw-text: #b1afaf;
+  --bmw: linear-gradient(135deg,
+          #000,
+          rgba(121, 116, 116, 0.705),
+          #000);
+  --golf-text: #aca329;
+  --golf: linear-gradient(135deg,
+      #666117,
+      #ffee008e,
+      #666117);
+  --civic-text: #9f9fce;
+  --civic: linear-gradient(135deg,
+      #030397,
+      #09099473,
+      #040475);
+  --i30n-text: #32b5e0 ;
+  --i30n: linear-gradient(135deg,
+      rgb(50, 181, 224),
+      #dc143c8a,
+      rgb(50, 181, 224)
+      );
+}
+
+/* footer{
+    position: absolute;
+    bottom: 0;
+    background: red;
+    width: 100%;
+    text-align: center;
+}
+footer p{
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    font-size: 1em;
+} */
+.cards {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 0 20px;
+  grid-gap: 40px;
+  top: 20vh;
+  margin: 0 5vw;
+}
+
+.card {
+  background-color: #1c1b29;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  outline: none;
+  border: none;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  border-radius: 20px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: inset 3px 3px 5px #ddda, inset -3px -3px 5px #000;
+  transition: 1s ease;
+}
+
+.card:hover.card::before {
+  opacity: 1;
+}
+
+.card:hover.card::after {
+  opacity: 0;
+}
+
+.container {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  z-index: 5;
+  overflow: hidden;
+  /* border-radius: 20px; */
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  transition: 0.5s ease;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+  transform: scale(0.93);
+  transition: 1s ease-in;
+}
+
+.card:hover .container img {
+  transform: scale(1.05);
+}
+
+/*img cover AFTER element*/
+.container::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.card .details p {
+  font-family: "Inter", sans-serif;
+  filter: blur(2px) grayscale(0.8);
+  transition: 1s ease;
+}
+
+.card:hover .details p {
+  filter: grayscale(0);
+}
+
+.card1 > .container::after {
+  background-image: var(--ford);
+}
+
+.card2 > .container::after {
+  background-image: var(--audi);
+}
+
+.card3 > .container::after {
+  background-image: var(--renault);
+}
+
+.card4 > .container::after {
+  background-image: var(--toyota);
+}
+
+.card5 > .container::after {
+  background-image: var(--benz);
+}
+
+.card6 > .container::after {
+  background-image: var(--bmw);
+}
+
+.card7 > .container::after {
+  background-image: var(--golf);
+}
+
+.card8 > .container::after {
+  background-image: var(--civic);
+}
+
+.card9 > .container::after {
+  background-image: var(--i30n);
+}
+
+/*end of img cover AFTER element*/
+.card:hover > .container::after {
+  transition: 1s ease;
+  opacity: 0;
+}
+
+/*glowing background BEFORE element*/
+.card1::before {
+  background: var(--ford);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 255, 0.74);
+}
+
+.card2::before {
+  background: var(--audi);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 211, 0, 0.74);
+}
+
+.card3::before {
+  background: var(--renault);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.74);
+}
+
+.card4::before {
+  background: var(--toyota);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(220, 20, 60, 0.74);
+}
+
+.card5::before {
+  background: var(--benz);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 240, 0, 0.74);
+}
+
+.card6::before {
+  background: var(--bmw);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(192, 192, 192, 0.74);
+}
+
+.card7::before {
+  background: var(--golf);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 0, 0.74);
+}
+
+.card8::before {
+  background: var(--civic);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 255, 0.74);
+}
+
+.card9::before {
+  background: var(--i30n);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(50, 181, 224, 0.74);
+}
+
+/*end of glowing background BEFORE element*/
+/*Details*/
+/*details p*/
+.details {
+  padding: 20px 20px;
+}
+
+.details > p {
+  color: #a0a0a0;
+  font-size: 1.1em;
+  line-height: 30px;
+  font-family: "Inter", sans-serif;
+}
+
+.card1 .details > p {
+  color: var(--ford-text);
+}
+
+.card2 .details > p {
+  color: var(--audi-text);
+}
+
+.card3 .details > p {
+  color: var(--renault-text);
+}
+
+.card4 .details > p {
+  color: var(--toyota-text);
+}
+
+.card5 .details > p {
+  color: var(--benz-text);
+}
+
+.card6 .details > p {
+  color: var(--bmw-text);
+}
+
+.card7 .details > p {
+  color: var(--golf-text);
+}
+
+.card8 .details > p {
+  color: var(--civic-text);
+}
+
+.card9 .details > p {
+  color: var(--i30n-text);
+}
+
+/*end of Details*/
+/*heading hover and focus effect*/
+.details > h3 {
+  color: rgba(116, 116, 116, 0.425);
+  font-size: 1.4em;
+  margin: 10px 0 15px 0;
+  position: relative;
+  font-family: "Krona One", sans-serif;
+}
+
+.details h3::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #cecdcd;
+  width: 0%;
+  overflow: hidden;
+  transition: 1.7s ease-in-out;
+  /* animation: animate 6s infinite; */
+}
+
+.card:hover h3 {
+  transition: color 1s;
+  color: transparent;
+}
+
+.card:hover > .details h3::before,
+.card:focus > .details h3::before {
+  width: 100%;
+  transition: 2s ease;
+}
+
+.card1:hover > .details h3::before {
+  color: var(--ford-text);
+}
+
+.card2:hover > .details h3::before {
+  color: var(--audi-text);
+}
+
+.card3:hover > .details h3::before {
+  color: var(--renault-text);
+  /* font-size: 0.8em; */
+}
+
+.card4:hover > .details h3::before {
+  color: var(--toyota-text);
+}
+
+.card5:hover > .details h3::before {
+  color: var(--benz-text);
+}
+
+.card6:hover > .details h3::before {
+  color: var(--bmw-text);
+}
+
+.card7:hover > .details h3::before {
+  color: var(--golf-text);
+  font-size: 0.9em;
+}
+
+.card8:hover > .details h3::before {
+  color: var(--civic-text);
+}
+
+.card9:hover > .details h3::before {
+  color: var(--i30n-text);
+}
+
+/*end of heading hover and focus effect*/
+@media screen and (max-width: 767px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    position: relative;
+    top: 15vh;
+    grid-gap: 40px;
+    margin: 0;
+  }
+
+  .card {
+    position: relative;
+    /* padding-top: 16vh; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .details > h3 {
+    font-size: 1em;
+  }
+
+  .details > p {
+    font-size: 0.7em;
+  }
+
+  .card3:hover > .details h3::before {
+    font-size: 0.8em;
+  }
+
+  .card8:hover > .details h3::before {
+    font-size: 0.8em;
+  }
+
+  #golf:hover > .details h3::before {
+    font-size: 0.8em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

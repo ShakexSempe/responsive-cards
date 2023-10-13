@@ -1,0 +1,60 @@
+@use './mixin';
+nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: .5rem 5vw;
+    background: #151320 ;
+    z-index: 10;
+    // outline-color: red;
+    // overflow: hidden;
+    height: auto;
+    
+    
+    ul {
+        // outline-color: blue;
+        padding: 0.5rem 0.25rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
+        overflow-x: scroll;
+        // NO SCROLL OVERFLOW ON DESKTOPS
+        @include mixin.md {
+            overflow: auto;
+        }
+
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            // outline-color: pink;
+            text-align: center;
+            list-style: none;
+            font-family: 'Krona One',
+                sans-serif;
+            color: hsl(0, 2%, 70%);
+            font-weight: 100;
+            cursor: default;
+            font-size: .75rem;
+            padding-right: .5rem;
+            border-right: 1px solid #fff2;
+            // border-left: 1px solid #fff4;
+            @include mixin.md {
+                cursor: pointer;
+            }
+            a {
+                img {
+                    width: 2rem;
+                }
+            }
+
+            &:hover {
+                transition: all .15s;
+                color: hsl(0, 2%, 100%);
+            }
+        }
+    }
+
+}
