@@ -48,8 +48,12 @@ nav{
                 flex-direction: column;
                 align-items: center;
                 color: #f4f4f4;
-                opacity: .7;
+                opacity: .6;
                 transition: .25s;
+                cursor: default;
+                @include mixin.sm {
+                    cursor: pointer;
+                }
 
                 img {
                     width: 2rem;
