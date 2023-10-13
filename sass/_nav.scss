@@ -13,7 +13,7 @@ nav{
     
     ul {
         // outline-color: blue;
-        padding: 0.5rem 0.25rem 1rem;
+        padding: 0.5rem 5vw 1rem;
         display: flex;
         justify-content: space-between;
         gap: 1rem;
@@ -22,37 +22,37 @@ nav{
         // NO SCROLL OVERFLOW ON DESKTOPS
         @include mixin.md {
             overflow: auto;
+            padding: 1rem .5rem;
         }
 
         li {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            
 
             // outline-color: pink;
             text-align: center;
             list-style: none;
-            font-family: 'Krona One',
-                sans-serif;
             color: hsl(0, 2%, 70%);
             font-weight: 100;
-            cursor: default;
             font-size: .75rem;
-            padding-right: .5rem;
+            padding-inline: .5rem;
             border-right: 1px solid #fff2;
-            // border-left: 1px solid #fff4;
-            @include mixin.md {
+            border-left: 1px solid #fff2;
+            cursor: default;
+            @include mixin.sm {
                 cursor: pointer;
+                flex-basis: 50%;
             }
             a {
+                font-family: 'Krona One', sans-serif;
+                display: flex;
+                text-decoration: none;
+                flex-direction: column;
+                align-items: center;
+                color: #eee;
+
                 img {
                     width: 2rem;
                 }
-            }
-
-            &:hover {
-                transition: all .15s;
-                color: hsl(0, 2%, 100%);
             }
         }
     }

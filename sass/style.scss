@@ -127,24 +127,7 @@ img{
 }
 /*img cover AFTER element*/
 figure::after{
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 5px 5px 0 0;
-    opacity: 0.7;
-    transition: 0.5s;
-}
-.card .details p{
-    font-family: 'Inter', sans-serif;
-    filter: grayscale(0.8);
-    transition: 0.5s ease;
-}
-.card:hover .details p{
-    filter: grayscale(0);
-
+    
 }
 .card1>figure::after {
     background-image: var(--ford);
@@ -176,10 +159,7 @@ figure::after{
     background-image: var(--i30n); 
 }
 /*end of img cover AFTER element*/
-.card:hover>figure::after{
-    transition: 1s ease;
-    opacity: 0;
-}
+
 /*glowing background BEFORE element*/
 .card1::before {
     background: var(--ford);

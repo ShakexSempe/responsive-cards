@@ -3,12 +3,15 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    // scroll-padding-top: 10vh;
+    scroll-padding-top: 15vh;
     outline: 2px solid transparent;
 }
 
 body{ 
-    font-family: sans-serif;
+    font-family: 'Krona One', sans-serif;
+    font-family: 'Inter', sans-serif;
+
+
 }
 
 main {
@@ -20,5 +23,9 @@ main {
     background-color: #151320;
     width: 100%;
     margin-inline: auto;
+}
 
+img {
+    max-width: 100%;
+    display: block;
 }
