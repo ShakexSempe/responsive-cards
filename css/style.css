@@ -76,7 +76,7 @@ img {
 .card .details p {
   font-size: 1rem;
   font-size: clamp(.95rem, 2vw, 1rem);
-  color: #fff;
+  color: #dbdbdb;
   line-height: 1.9;
   transition: 1s ease;
 }
@@ -133,6 +133,54 @@ img {
 }
 .card#audi:hover .details p {
   color: var(--audi-text);
+}
+.card#benz:hover .details h3::before {
+  color: var(--benz-text);
+}
+.card#benz:hover .details p {
+  color: var(--benz-text);
+}
+.card#ford:hover .details h3::before {
+  color: var(--ford-text);
+}
+.card#ford:hover .details p {
+  color: var(--ford-text);
+}
+.card#bmw:hover .details h3::before {
+  color: var(--bmw-text);
+}
+.card#bmw:hover .details p {
+  color: var(--bmw-text);
+}
+.card#renault:hover .details h3::before {
+  color: var(--renault-text);
+}
+.card#renault:hover .details p {
+  color: var(--renault-text);
+}
+.card#golf:hover .details h3::before {
+  color: var(--golf-text);
+}
+.card#golf:hover .details p {
+  color: var(--golf-text);
+}
+.card#toyota:hover .details h3::before {
+  color: var(--toyota-text);
+}
+.card#toyota:hover .details p {
+  color: var(--toyota-text);
+}
+.card#honda:hover .details h3::before {
+  color: var(--civic-text);
+}
+.card#honda:hover .details p {
+  color: var(--civic-text);
+}
+.card#i30:hover .details h3::before {
+  color: var(--i30n-text);
+}
+.card#i30:hover .details p {
+  color: var(--i30n-text);
 }
 
 nav {

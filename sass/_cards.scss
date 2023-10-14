@@ -52,7 +52,7 @@
         p {
             font-size: 1rem;
             font-size: clamp(.95rem, 2vw, 1rem);
-            color: #fff;
+            color: hsl(0, 0%, 86%);
             line-height: 1.9;
             // filter: grayscale(1);
             transition: 1s ease;
@@ -140,6 +140,126 @@
                 }
                 p {
                     @include mixin.theme-color((var(--audi-text)))
+                }
+            }
+        }
+    }
+
+    &#benz {
+        &:hover {
+            .details {
+                h3 {
+                    &::before {
+                        @include mixin.theme-color((var(--benz-text)))
+                    }
+                }
+                p {
+                    @include mixin.theme-color((var(--benz-text)))
+                }
+            }
+        }
+    }
+
+    &#ford {
+        &:hover {
+            .details {
+                h3 {
+                    &::before {
+                        @include mixin.theme-color((var(--ford-text)))
+                    }
+                }
+                p {
+                    @include mixin.theme-color((var(--ford-text)))
+                }
+            }
+        }
+    }
+
+    &#bmw {
+        &:hover {
+            .details {
+                h3 {
+                    &::before {
+                        @include mixin.theme-color((var(--bmw-text)))
+                    }
+                }
+                p {
+                    @include mixin.theme-color((var(--bmw-text)))
+                }
+            }
+        }
+    }
+
+    &#renault {
+        &:hover {
+            .details {
+                h3 {
+                    &::before {
+                        @include mixin.theme-color((var(--renault-text)))
+                    }
+                }
+                p {
+                    @include mixin.theme-color((var(--renault-text)))
+                }
+            }
+        }
+    }
+
+    &#golf {
+        &:hover {
+            .details {
+                h3 {
+                    &::before {
+                        @include mixin.theme-color((var(--golf-text)))
+                    }
+                }
+                p {
+                    @include mixin.theme-color((var(--golf-text)))
+                }
+            }
+        }
+    }
+
+    &#toyota {
+        &:hover {
+            .details {
+                h3 {
+                    &::before {
+                        @include mixin.theme-color((var(--toyota-text)))
+                    }
+                }
+                p {
+                    @include mixin.theme-color((var(--toyota-text)))
+                }
+            }
+        }
+    }
+
+    &#honda {
+        &:hover {
+            .details {
+                h3 {
+                    &::before {
+                        @include mixin.theme-color((var(--civic-text)))
+                    }
+                }
+                p {
+                    @include mixin.theme-color((var(--civic-text)))
+                }
+            }
+        }
+    }
+
+    &#i30 {
+        &:hover {
+            .details {
+                h3 {
+                    &::before {
+                        @include mixin.theme-color((var(--i30n-text)))
+                    }
+                }
+                p {
+                    @include mixin.theme-color((var(--i30n-text)))
                 }
             }
         }
