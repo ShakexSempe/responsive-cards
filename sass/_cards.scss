@@ -131,6 +131,11 @@
 
     // CARD THEME COLORS
     &#audi {
+        figure {
+            &::after {
+                background-image: var(--audi);
+            }
+        }
         &:hover {
             .details {
                 h3 {
@@ -146,6 +151,13 @@
     }
 
     &#benz {
+
+        figure {
+            &::after {
+                background-image: var(--benz);
+            }
+        }
+
         &:hover {
             .details {
                 h3 {
@@ -161,6 +173,11 @@
     }
 
     &#ford {
+        figure {
+            &::after {
+                background-image: var(--ford);
+            }
+        }
         &:hover {
             .details {
                 h3 {
@@ -176,6 +193,11 @@
     }
 
     &#bmw {
+        figure {
+            &::after {
+                background-image: var(--bmw);
+            }
+        }
         &:hover {
             .details {
                 h3 {
@@ -191,6 +213,11 @@
     }
 
     &#renault {
+        figure {
+            &::after {
+                background-image: var(--renault);
+            }
+        }
         &:hover {
             .details {
                 h3 {
@@ -206,6 +233,11 @@
     }
 
     &#golf {
+        figure {
+            &::after {
+                background-image: var(--golf);
+            }
+        }
         &:hover {
             .details {
                 h3 {
@@ -221,6 +253,11 @@
     }
 
     &#toyota {
+        figure {
+            &::after {
+                background-image: var(--toyota);
+            }
+        }
         &:hover {
             .details {
                 h3 {
@@ -236,6 +273,11 @@
     }
 
     &#honda {
+        figure {
+            &::after {
+                background-image: var(--civic);
+            }
+        }
         &:hover {
             .details {
                 h3 {
@@ -251,6 +293,11 @@
     }
 
     &#i30 {
+        figure {
+            &::after {
+                background-image: var(--i30n);
+            }
+        }
         &:hover {
             .details {
                 h3 {

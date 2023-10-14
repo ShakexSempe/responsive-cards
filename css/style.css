@@ -128,11 +128,17 @@ img {
 .card:hover .details p {
   filter: grayscale(0);
 }
+.card#audi figure::after {
+  background-image: var(--audi);
+}
 .card#audi:hover .details h3::before {
   color: var(--audi-text);
 }
 .card#audi:hover .details p {
   color: var(--audi-text);
+}
+.card#benz figure::after {
+  background-image: var(--benz);
 }
 .card#benz:hover .details h3::before {
   color: var(--benz-text);
@@ -140,11 +146,17 @@ img {
 .card#benz:hover .details p {
   color: var(--benz-text);
 }
+.card#ford figure::after {
+  background-image: var(--ford);
+}
 .card#ford:hover .details h3::before {
   color: var(--ford-text);
 }
 .card#ford:hover .details p {
   color: var(--ford-text);
+}
+.card#bmw figure::after {
+  background-image: var(--bmw);
 }
 .card#bmw:hover .details h3::before {
   color: var(--bmw-text);
@@ -152,11 +164,17 @@ img {
 .card#bmw:hover .details p {
   color: var(--bmw-text);
 }
+.card#renault figure::after {
+  background-image: var(--renault);
+}
 .card#renault:hover .details h3::before {
   color: var(--renault-text);
 }
 .card#renault:hover .details p {
   color: var(--renault-text);
+}
+.card#golf figure::after {
+  background-image: var(--golf);
 }
 .card#golf:hover .details h3::before {
   color: var(--golf-text);
@@ -164,17 +182,26 @@ img {
 .card#golf:hover .details p {
   color: var(--golf-text);
 }
+.card#toyota figure::after {
+  background-image: var(--toyota);
+}
 .card#toyota:hover .details h3::before {
   color: var(--toyota-text);
 }
 .card#toyota:hover .details p {
   color: var(--toyota-text);
 }
+.card#honda figure::after {
+  background-image: var(--civic);
+}
 .card#honda:hover .details h3::before {
   color: var(--civic-text);
 }
 .card#honda:hover .details p {
   color: var(--civic-text);
+}
+.card#i30 figure::after {
+  background-image: var(--i30n);
 }
 .card#i30:hover .details h3::before {
   color: var(--i30n-text);
