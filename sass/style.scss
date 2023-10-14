@@ -87,99 +87,99 @@ footer p{
 // }
 
 
-.card1>figure::after {
-    background-image: var(--ford);
+// .card1>figure::after {
+//     background-image: var(--ford);
     
-}
-.card2>figure::after {
-    background-image: var(--audi);
-}
-.card3>figure::after {
-    background-image: var(--renault);
+// }
+// .card2>figure::after {
+//     background-image: var(--audi);
+// }
+// .card3>figure::after {
+//     background-image: var(--renault);
     
-}
-.card4>figure::after {
-    background-image: var(--toyota);
-}
-.card5>figure::after {
-    background-image: var(--benz);
-}
-.card6>figure::after {
-    background-image: var(--bmw); 
-}
-.card7>figure::after {
-    background-image: var(--golf); 
-}
-.card8>figure::after {
-    background-image: var(--civic); 
-}
-.card9>figure::after {
-    background-image: var(--i30n); 
-}
+// }
+// .card4>figure::after {
+//     background-image: var(--toyota);
+// }
+// .card5>figure::after {
+//     background-image: var(--benz);
+// }
+// .card6>figure::after {
+//     background-image: var(--bmw); 
+// }
+// .card7>figure::after {
+//     background-image: var(--golf); 
+// }
+// .card8>figure::after {
+//     background-image: var(--civic); 
+// }
+// .card9>figure::after {
+//     background-image: var(--i30n); 
+// }
 
-/*Details*/
+// /*Details*/
 
-.card1 .details>p {
-    color: var(--ford-text);
-}
+// .card1 .details>p {
+//     color: var(--ford-text);
+// }
 
-.card2 .details>p {
-    color: var(--audi-text);
-}
+// .card2 .details>p {
+//     color: var(--audi-text);
+// }
 
-.card3 .details>p {
-    color: var(--renault-text);
-}
+// .card3 .details>p {
+//     color: var(--renault-text);
+// }
 
-.card4 .details>p {
-    color: var(--toyota-text);
-}
+// .card4 .details>p {
+//     color: var(--toyota-text);
+// }
 
-.card5 .details>p {
-    color: var(--benz-text);
-}
+// .card5 .details>p {
+//     color: var(--benz-text);
+// }
 
-.card6 .details>p {
-    color: var(--bmw-text);
-}
-.card7 .details>p {
-    color: var(--golf-text);
-}
-.card8 .details>p {
-    color: var(--civic-text);
-}
-.card9 .details>p {
-    color: var(--i30n-text);
-}
+// .card6 .details>p {
+//     color: var(--bmw-text);
+// }
+// .card7 .details>p {
+//     color: var(--golf-text);
+// }
+// .card8 .details>p {
+//     color: var(--civic-text);
+// }
+// .card9 .details>p {
+//     color: var(--i30n-text);
+// }
 
 
-.card1:hover  >.details h3::before {
-    color: var(--ford-text);
-}
-.card2:hover  >.details h3::before {
-    color: var(--audi-text);
-}
-.card3:hover  >.details h3::before {
-    color: var(--renault-text);
-}
-.card4:hover  >.details h3::before {
-    color: var(--toyota-text);
-}
-.card5:hover  >.details h3::before {
-    color: var(--benz-text);
-}
-.card6:hover  >.details h3::before {
-    color: var(--bmw-text);
-}
-.card7:hover  >.details h3::before {
-    color: var(--golf-text);
-}
-.card8:hover  >.details h3::before {
-    color: var(--civic-text);
-}
-.card9:hover  >.details h3::before {
-    color: var(--i30n-text);
-}
+// .card1:hover  >.details h3::before {
+//     color: var(--ford-text);
+// }
+// .card2:hover  >.details h3::before {
+//     color: var(--audi-text);
+// }
+// .card3:hover  >.details h3::before {
+//     color: var(--renault-text);
+// }
+// .card4:hover  >.details h3::before {
+//     color: var(--toyota-text);
+// }
+// .card5:hover  >.details h3::before {
+//     color: var(--benz-text);
+// }
+// .card6:hover  >.details h3::before {
+//     color: var(--bmw-text);
+// }
+// .card7:hover  >.details h3::before {
+//     color: var(--golf-text);
+// }
+// .card8:hover  >.details h3::before {
+//     color: var(--civic-text);
+// }
+// .card9:hover  >.details h3::before {
+//     color: var(--i30n-text);
+// }
 
 /*end of heading hover and focus effect*/
 

@@ -4,6 +4,12 @@ $screen-sm-min: 576px;
 $screen-md-min: 768px;
 $screen-lg-min: 820px;
 $screen-xlg-min: 1024px;
+
+@mixin theme-color($color) {
+    color: $color
+}
+
+
 // EXTRA SMALL DEVICES 
 @mixin xsm {
     @media (max-width: #{$screen-xsm-max}) {

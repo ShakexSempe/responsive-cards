@@ -41,7 +41,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                color: #cecdcd;
+                // color: #cecdcd;
                 width: 0%;
                 overflow: hidden;
                 transition: 1.5s ease-in-out;
@@ -54,7 +54,7 @@
             font-size: clamp(.95rem, 2vw, 1rem);
             color: #fff;
             line-height: 1.9;
-            filter: grayscale(1);
+            // filter: grayscale(1);
             transition: 1s ease;
         }
 
@@ -124,6 +124,23 @@
             }
             p {
                 filter: grayscale(0);
+            }
+        }
+    }
+
+
+    // CARD THEME COLORS
+    &#audi {
+        &:hover {
+            .details {
+                h3 {
+                    &::before {
+                        @include mixin.theme-color((var(--audi-text)))
+                    }
+                }
+                p {
+                    @include mixin.theme-color((var(--audi-text)))
+                }
             }
         }
     }
